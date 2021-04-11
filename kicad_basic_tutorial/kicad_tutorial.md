@@ -27,7 +27,7 @@ Once you finish designing a PCB, you can send it out to manufacturers to help yo
 
 Below is the image of the PCB we will be designing.
 
-![](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/kicad_basic_tutorial/imgs/pcb_cad.png?token=AH63NOXGSFJ4RLDCERL63YTAOFKDY)
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_cad.png?raw=true)
 
 Pretty cool right? Or maybe it's just me who thinks it's cool. I'm going insane.
 
@@ -42,7 +42,7 @@ Ok, let's start off with our circuit. What do we want in our circuit? Good quest
 
 Ok, now that we know what we want in our circuit, next it's usually up to the circuit designer to figure out how everything is connected together. I did that work for you in this circuit diagram here:
 
-![](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/kicad_basic_tutorial/imgs/circuit_diagram.png?token=AH63NOWDCFMCXHHGJY5DAZ3AOFLBQ)
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_cad/circuit_diagram.png?raw=true)
 
 *For the batteries, just think of it as any 5V power source for now. It doesn't matter what type of power source we use as long as it is 5V DC.*
 
