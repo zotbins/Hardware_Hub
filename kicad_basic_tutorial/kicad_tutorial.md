@@ -160,11 +160,24 @@ First, we want to move the two 1 by 8 male header pins to exactly 22.86 mm apart
 
 ![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/esp_32_cam_datasheet.png)
 
+Use the grid points and the dimension tool to help you space it out accordingly. Also rotate and place the other footprints according to this picture.
+
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/rotate_and_place_footprints.png)
+
 ## Edge Cut
+In the image above, do you see that yellow square outline? You shouldn't have that yet, since I skipped ahead. That yellow square outline is called the edge cut. It will determine the shape and size of your PCB.
+
+First, change your layers to **Edge.Cuts**, then select the add graphical lines button on the right side panel. Finally, draw the square around your PCB footprints.
+
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/edge_cuts.png)
 
 ## Route Tracks
+This will flex our creativity here. We need to set the exact copper traces for connecting the PCBs together.
+
+Go back to the **F.Cu (PgUp)** Layer and click the **Route Tracks** button on the right side panel.
 
 ## Add Text
+Use the add text tool to add your text. Make sure that it is on the **F.SilkS** Layer.
 
 ## Your Done!
 Thanks.
