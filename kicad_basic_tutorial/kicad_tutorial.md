@@ -179,5 +179,9 @@ Go back to the **F.Cu (PgUp)** Layer and click the **Route Tracks** button on th
 ## Add Text
 Use the add text tool to add your text. Make sure that it is on the **F.SilkS** Layer.
 
-## Your Done!
+## View in 3D Mode 
+
+**view > 3D-viewer**
+
+## You're Done!
 Thanks.
