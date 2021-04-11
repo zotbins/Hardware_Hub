@@ -27,7 +27,7 @@ Once you finish designing a PCB, you can send it out to manufacturers to help yo
 
 Below is the image of the PCB we will be designing.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_cad.png?raw=true)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_cad.png?raw=true)
 
 Pretty cool right? Or maybe it's just me who thinks it's cool. I'm going insane.
 
@@ -42,7 +42,7 @@ Ok, let's start off with our circuit. What do we want in our circuit? Good quest
 
 Ok, now that we know what we want in our circuit, next it's usually up to the circuit designer to figure out how everything is connected together. I did that work for you in this circuit diagram here:
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/circuit_diagram.png?raw=true)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/circuit_diagram.png?raw=true)
 
 *For the batteries, just think of it as any 5V power source for now. It doesn't matter what type of power source we use as long as it is 5V DC.*
 
@@ -50,7 +50,7 @@ Ok, now that we know what we want in our circuit, next it's usually up to the ci
 
 Once you open up KiCad go ahead and create a new project. **File > New > Project**
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/open_kicad.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/open_kicad.png)
 
 I named my project "tutorial" because I'm super creative.
 
@@ -60,11 +60,11 @@ When you create you're project it should already generate two files for you. A .
 
 We're going to first start off with editing the schematic file. So go ahead and click on the **Schematic Layout Editor** circled in yellow in the image below.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/open_schematic_editor.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/open_schematic_editor.png)
 
 Next, make sure the following tile buttons on the left are selected. This will make sure you have the same setup as me as you are following this tutorial.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/schematic_editor_intro.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/schematic_editor_intro.png)
 
 On the right of the image above. I want you to just familiarize yourself with some of the tools we will be using:
 1. Select Item
@@ -76,7 +76,7 @@ On the right of the image above. I want you to just familiarize yourself with so
 
 Next, I want you all to familiarize yourself with the list of available Hotkeys are shortcuts. As you build more projects, knowing the list of Hotkeys will help you design PCB's faster. To view the Hotkeys list go to **Help > List Hotkeys**. If you are on Windows you can do **Ctrl + F1**.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/hotkey_list.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/hotkey_list.png)
 
 Some common hotkeys I use are :
 - **R** to rotate
@@ -90,30 +90,30 @@ For our circuit we will be placing the following components onto our schematic. 
 
 Click on the **Place Symbol** Icon on the top right and then click anywhere on the canvas. Search up each of the following components listed above and place them one by one. Use the copy and rotate tool to try to arrange the schematic like in the image below.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/place_components.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/place_components.png)
 
 Next, let's go ahead and add some text by clicking on the **Place Text** tool and labeling the components as I have done so in the image below.
 
 ## Making the Connections
 Next, up we're going to make some connections. Go ahead and connect the following pins as in the image below. For the rest of the pins that are not connected to anything we are going to do a **place no connection flag**
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/schematic_wiring.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/schematic_wiring.png)
 
 If you notice in the image above. There are a bunch of question marks next to each component. So here's what we are going to do. We're going to annotate and assign all those question marks to numbers. On the top bar, click on the **annotate schematic symbols** button as show in the image below.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_symbols)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_symbols)
 
 ## Annotating Schematic and Checking the Electrical Connections
 Just go ahead and leave everything as default when the Annotate Schematic window pops up and click annotate.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_window.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_window.png)
 
 Now all those question marks should be replaced with numbers! Yay!
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotation_numbers_shows.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotation_numbers_shows.png)
 
 Next we are going to check if all the electrical connections are ok. That means we are checking, is everything connected?
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/electrical_rules_check.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/electrical_rules_check.png)
 
 Just run it and you should get no errors, because we connected everything in our schematic! This tool is pretty useful for when you have a huge complicated circuit.
 
@@ -122,7 +122,7 @@ For the sake of this tutorial I won't go into detail of what a netlist is. Just 
 
 Click on the **generate netlist** button as shown in the image below.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/generate_netlist_butt.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/generate_netlist_butt.png)
 
 Just leave the default setting and click **OK**.
 
@@ -132,4 +132,39 @@ Now we have all the parts of our schematic. Now in order for us to transition in
 
 Click on the **assign PCB footprints to schematic symbols** button as shown below.
 
-![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/assign_pcb_footprints_to_schematic.png)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/assign_pcb_footprints_to_schematic.png)
+
+We're going to go through the middle column one by one.
+
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/symbol_footprint_assignment.png)
+
+A few tips.
+- Use the **Footprint Libraries** column (leftmost) to help you narrow down the footprints you want
+- Use the **Filtered Footprints** to find and select your specfic footprint
+- You can view your footprint by right clicking on it
+- You can also view the footprint in a CAD model
+
+Now let's save everything and go back to the main KiCad Window.
+
+## Creating your PCB!
+Click on the **PCB Layout Editor** button as shown in the image below.
+
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_layout_editor_butt.png)
+
+
+You want to load the netlist by clicking on the **Load netlist** button on the top. Then click ok and add the footprint to the PCB layout by left-clicking on the black canvas once.
+
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/pcb_layout_editor_load_netlist.png)
+
+First, we want to move the two 1 by 8 male header pins to exactly 22.86 mm apart, as shown in the ESP32CAM datasheet.
+
+![](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/esp_32_cam_datasheet.png)
+
+## Edge Cut
+
+## Route Tracks
+
+## Add Text
+
+## Your Done!
+Thanks.
