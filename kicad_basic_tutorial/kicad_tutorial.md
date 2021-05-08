@@ -100,7 +100,7 @@ Next, up we're going to make some connections. Go ahead and connect the followin
 
 If you notice in the image above. There are a bunch of question marks next to each component. So here's what we are going to do. We're going to annotate and assign all those question marks to numbers. On the top bar, click on the **annotate schematic symbols** button as show in the image below.
 
-![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_symbols)
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_symbols.png)
 
 ## Annotating Schematic and Checking the Electrical Connections
 Just go ahead and leave everything as default when the Annotate Schematic window pops up and click annotate.
@@ -179,5 +179,9 @@ Go back to the **F.Cu (PgUp)** Layer and click the **Route Tracks** button on th
 ## Add Text
 Use the add text tool to add your text. Make sure that it is on the **F.SilkS** Layer.
 
-## Your Done!
+## View in 3D Mode 
+
+**view > 3D-viewer**
+
+## You're Done!
 Thanks.
