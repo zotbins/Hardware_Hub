@@ -26,6 +26,8 @@ To follow along this tutorial you will need:
 
 This is what the circuit looks like for a typical ZotBins setup at UCI. In the image below we can see the breakbeam sensors, the ultrasonic sensor, and the loadcells all connected to the Raspberry Pi using the GPIO pins. We'll only be working on the Ultrasonic circuit and the Breakbeam Circuit in this tutorial.
 
+For this tutorial you can refer to this circuit here: https://www.circuito.io/app?components=9443,13959,200000,669681
+
 ![img](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/raspi_and_sensors_tutorial/imgs/full_circuit.png)
 
 ### GPIO Pins on a Raspberry Pi
@@ -38,6 +40,10 @@ This is what the circuit looks like for a typical ZotBins setup at UCI. In the i
 
 ### Making the Ultrasonic Circuit
 We use a voltage divider using the 1 kohm resistor and a 2 kohm resistor (two 1 kohm resistor in series) because the Raspberry Pi can only handle certain voltages.
+
+Let's connect Trig and Echo to the following:
+    - Trig: GPIO 23
+    - Echo: GPIO 24
 
 ![img](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/raspi_and_sensors_tutorial/imgs/ultrasonic_circuit.png)
 
@@ -53,15 +59,57 @@ We use a 10kohm pull-up resistor for the break-beam sensor.
 **Resources**
 - [Circuit IO](https://www.circuito.io/app?components=9443,200000,669681)
 
-### Getting Familliar with the Terminal
-
-In this step we will use the terminal to interact with running some example code. If you hate the terminal, you can follow these steps by using a Python IDE such as Geany or Thonny Python IDE that should come with the default Raspberry Pi OS.
-
-1. open the terminal with the shortcut: `ctrl + alt + t`
-2. clone the repo
-
 ### Running the Code
-1
+1. Run this Code for the Break-beam Sensor:
+
+```python
+import time
+import datetime
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4,GPIO.IN)
+GPIO.setup(17,GPIO.IN)
+GPIO.setup(27,GPIO.IN)
+
+
+
+while True:
+    sensor_state = GPIO.input(4)
+    print(GPIO.input(4))
+    if (sensor_state==0):
+        while(sensor_state==0):
+            sensor_state = GPIO.input(4)
+            print(GPIO.input(4))
+            print(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
+            time.sleep(1)
+    time.sleep(1)
+```
+
+2. Run this code for the Ultrasonic Sensor:
+
+```python
+import time
+import datetime
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4,GPIO.IN)
+GPIO.setup(17,GPIO.IN)
+GPIO.setup(27,GPIO.IN)
+
+
+
+while True:
+    sensor_state = GPIO.input(4)
+    print(GPIO.input(4))
+    if (sensor_state==0):
+        while(sensor_state==0):
+            sensor_state = GPIO.input(4)
+            print(GPIO.input(4))
+            print(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
+            time.sleep(1)
+    time.sleep(1)
+```
+
 ### Soldering Tips
 1. Wear Safety Goggles just in case
     - if you melt the solder too fast, the solder might splatter and hit your eye
@@ -73,4 +121,13 @@ In this step we will use the terminal to interact with running some example code
 3. Put a small blob of solder on your iron to help increase surface area of contact.
 4. Make sure to touch both the copper pad and the pin/wire you are soldering.
 
-###
+![img](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/raspi_and_sensors_tutorial/imgs/soldering_tips.png)
+
+![img](https://raw.githubusercontent.com/zotbins/Hardware_Hub/main/raspi_and_sensors_tutorial/imgs/good-bad-soldering.jpg)
+
+### Practice soldering
+1. Solder a stranded wire
+2. Solder two wires together
+3. Solder a pin to a PCB
+4. Solder some male headers onto a PCB
+5. Solder some female headers onto a PCB  
