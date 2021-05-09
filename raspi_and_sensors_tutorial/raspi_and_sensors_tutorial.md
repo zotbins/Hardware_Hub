@@ -2,10 +2,6 @@
 
 This tutorial will walk through how to use your Raspberry Pi to interact with some common sensors used with ZotBins.
 
-### Table of Contents
-1. Materials and Pre-requisites
-1. Getting Familiar with the Terminal
-
 ### Materials and Pre-requisites
 To follow along this tutorial you will need:
 - a Raspberry Pi 3 with the latest Raspbbery Pi OS
@@ -42,6 +38,7 @@ For this tutorial you can refer to this circuit here: https://www.circuito.io/ap
 We use a voltage divider using the 1 kohm resistor and a 2 kohm resistor (two 1 kohm resistor in series) because the Raspberry Pi can only handle certain voltages.
 
 Let's connect Trig and Echo to the following:
+
     - Trig: GPIO 23
     - Echo: GPIO 24
 
