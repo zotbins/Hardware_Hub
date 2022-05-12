@@ -102,6 +102,15 @@ If you notice in the image above. There are a bunch of question marks next to ea
 
 ![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/annotate_schematic_symbols.png)
 
+## Generating A Netlist
+For the sake of this tutorial I won't go into detail of what a netlist is. Just know that it is basically a file that is used to store information about the connections so that our PCB layout editor will know what to do.
+
+Click on the **generate netlist** button as shown in the image below.
+
+![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/generate_netlist_butt.png)
+
+Just leave the default setting and click **OK**.
+
 ## Annotating Schematic and Checking the Electrical Connections
 Just go ahead and leave everything as default when the Annotate Schematic window pops up and click annotate.
 
@@ -116,15 +125,6 @@ Next we are going to check if all the electrical connections are ok. That means 
 ![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/electrical_rules_check.png)
 
 Just run it and you should get no errors, because we connected everything in our schematic! This tool is pretty useful for when you have a huge complicated circuit.
-
-## Generating A Netlist
-For the sake of this tutorial I won't go into detail of what a netlist is. Just know that it is basically a file that is used to store information about the connections so that our PCB layout editor will know what to do.
-
-Click on the **generate netlist** button as shown in the image below.
-
-![img](https://github.com/zotbins/Hardware_Hub/blob/main/kicad_basic_tutorial/imgs/generate_netlist_butt.png)
-
-Just leave the default setting and click **OK**.
 
 ## Assign PCB footprints to schematic symbols
 
